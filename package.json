@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/ckwcfm/cabinet-rs485-controller/issues"
   },
-  "homepage": "https://github.com/ckwcfm/cabinet-rs485-controller#readme"
+  "homepage": "https://github.com/ckwcfm/cabinet-rs485-controller#readme",
+  "dependencies": {
+    "buffer-reverse": "^1.0.1",
+    "serialport": "^10.4.0"
+  }
 }
