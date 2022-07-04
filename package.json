@@ -1,0 +1,19 @@
+{
+  "name": "cabinet-rs-485-controller",
+  "version": "1.0.0",
+  "description": "a driver to convert cabinet action to Buffer cammand  for a rs485 controller  ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ckwcfm/cabinet-rs485-controller.git"
+  },
+  "author": "Kevin Wong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ckwcfm/cabinet-rs485-controller/issues"
+  },
+  "homepage": "https://github.com/ckwcfm/cabinet-rs485-controller#readme"
+}
