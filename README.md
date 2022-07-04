@@ -13,7 +13,7 @@ npm install cabinet-rs-485-controller
 # Usage
 
 ```javascript
-const cabinetManager = require('../../managers/cabinet-manager')
+const cabinetManager = require('cabinet-rs-485-controller')
 
 const cabinet = 1
 const doors = [1, 2, 6]
@@ -25,7 +25,7 @@ const status = await cabinetManager.readAllDoorsOnCabinet({ cabinet })
 cabinetManager will try to find the usb serial port. You can also use `connect()` to connect to your serical port
 
 ```javascript
-const cabinetManager = require('../../managers/cabinet-manager')
+const cabinetManager = require('cabinet-rs-485-controller')
 
 const devices = await cabinetManager.listDevices()
 const { path } = devices[0]
