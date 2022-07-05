@@ -29,7 +29,6 @@ const decodeOpenDoorFeedback = (buffer) => {
   const cabinet = parseInt(cabinetHex.toString('hex'), 16)
   const door = parseInt(doorHex.toString('hex'), 16)
   const status = statusHex.toString('hex') === '11' ? 'success' : 'fail'
-  console.log({ cabinet, door, status })
   return { cabinet, door, status }
 }
 
