@@ -1,6 +1,6 @@
 {
   "name": "cabinet-rs-485-controller",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a driver to convert cabinet action to Buffer cammand  for a rs485 controller  ",
   "main": "index.js",
   "scripts": {

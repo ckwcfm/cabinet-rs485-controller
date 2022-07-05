@@ -96,19 +96,21 @@ CabinetManager.prototype.write = async function (data, ignoreFeedback = false) {
     }
     await this.openPort()
     console.log('opened', `writing data ${data.toString('hex')}`)
+    if (ignoreFeedback) {
+      this.serialPort.write(data)
+      return resolve('')
+    }
+
+    this.serialPort.flush()
+    this.serialPort.prependOnceListener('data', (data) => {
+      console.log(`on wirte ${data.toString('hex')}`)
+      return resolve(data)
+    })
     this.serialPort.write(data, (error) => {
       if (error) {
         console.log(`error ${error}`)
         return reject(error)
       }
-      if (ignoreFeedback) {
-        return resolve('')
-      }
-      this.serialPort.flush()
-      this.serialPort.prependOnceListener('data', (data) => {
-        console.log(`on wirte ${data.toString('hex')}`)
-        return resolve(data)
-      })
     })
   })
 }

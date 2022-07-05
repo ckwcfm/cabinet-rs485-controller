@@ -1,4 +1,4 @@
-const { listDevices } = require('./serial')
+const { listDevices, createSerialPort } = require('./serial')
 const bufferReverse = require('buffer-reverse')
 
 const COMMEND = Object.freeze({
