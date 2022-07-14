@@ -1,6 +1,6 @@
 # cabinet-rs-485-controller
 
-![npm](https://img.shields.io/npm/v/1.0.2)
+![npm](https://img.shields.io/npm/v/cabinet-rs-485-controller)
 
 this controller make it easy to use this kind of rs485 controller board. You don't need to handle buffer cammand anymore
 
